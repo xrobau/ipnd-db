@@ -1,9 +1,20 @@
 {
-    "require": {
-        "doctrine/orm": "2.4.*",
-	"aussievoip/ipnd": "^1.0"
-    },
-    "autoload": {
-	"classmap": [ "src/" ]
-    }
+	"name": "aussievoip/ipnd-db",
+	"type": "library",
+	"description": "Doctrine Database layer for storing IPND records",
+	"keywords": ["ipnd", "australia", "e911"],
+	"homepage": "https://github.com/xrobau/ipnd-db",
+	"license": "AGPL-3.0-or-later",
+	"authors": [ {
+		"name": "Rob Thomas",
+		"email": "xrobau@linux.com",
+		"homepage": "https://xrobau.com"
+	} ],
+	"require": {
+		"doctrine/orm": "2.4.*",
+		"aussievoip/ipnd": "^1.0"
+	},
+	"autoload": {
+		"classmap": [ "src/" ]
+	}
 }
