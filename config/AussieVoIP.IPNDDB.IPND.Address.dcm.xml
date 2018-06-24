@@ -1,0 +1,38 @@
+<!-- config/Product.dcm.xml -->
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                    http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+      <entity name="AussieVoIP\IPNDDB\IPND\Address" table="address">
+          <id name="id" type="integer">
+              <generator strategy="AUTO" />
+          </id>
+
+          <field name="AddressType" type="string" length="10" />
+          <field name="Street1Name" type="string" length="25" nullable="true"/>
+          <field name="Street1Type" type="string" length="8" nullable="true"/>
+          <field name="Street1Suffix" type="string" length="6" nullable="true"/>
+          <field name="Street2Name" type="string" length="25" nullable="true"/>
+          <field name="Street2Type" type="string" length="4" nullable="true"/>
+          <field name="Street2Suffix" type="string" length="2" nullable="true"/>
+          <field name="State" type="string" length="3" nullable="true"/>
+          <field name="Locality" type="string" length="40" nullable="true"/>
+          <field name="Postcode" type="string" length="4" nullable="true"/>
+          <field name="House1stNum" type="string" length="5" nullable="true"/>
+          <field name="House1stSuffix" type="string" length="3" nullable="true"/>
+          <field name="House2ndNum" type="string" length="5" nullable="true"/>
+          <field name="House2ndSuffix" type="string" length="1" nullable="true"/>
+          <field name="BuildingFloorType" type="string" length="2" nullable="true"/>
+          <field name="BuildingFloorNr" type="string" length="4" nullable="true"/>
+          <field name="BuildingFloorSuffix" type="string" length="1" nullable="true"/>
+          <field name="BuildingLocation" type="string" length="30" nullable="true"/>
+          <field name="BuildingProperty" type="string" length="40" nullable="true"/>
+          <field name="BuildingType" type="string" length="6" nullable="true"/>
+          <field name="Building1stNum" type="string" length="5" nullable="true"/>
+          <field name="Building1stSuffix" type="string" length="1" nullable="true"/>
+          <field name="Building2ndNum" type="string" length="5" nullable="true"/>
+          <field name="Building2ndSuffix" type="string" length="1" nullable="true"/>
+      </entity>
+</doctrine-mapping>
+

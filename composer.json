@@ -1,0 +1,9 @@
+{
+    "require": {
+        "doctrine/orm": "2.4.*",
+	"aussievoip/ipnd": "^1.0"
+    },
+    "autoload": {
+	"classmap": [ "src/" ]
+    }
+}
