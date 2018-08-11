@@ -11,7 +11,7 @@
 		"homepage": "https://xrobau.com"
 	} ],
 	"require": {
-		"doctrine/orm": "2.4.*",
+		"doctrine/orm": "^2.5",
 		"aussievoip/ipnd": "^1.0"
 	},
 	"autoload": {
